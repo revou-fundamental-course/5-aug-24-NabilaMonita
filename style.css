@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro {
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #4b4949;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.icon-container {
+    background-color: #e0e0e0;
+    padding: 8px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-container i {
+    color: #808080;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input[type="radio"] {
+    margin-left: 10px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#bmiResult {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+}
+
+#bmiResult.normal {
+    background-color: #4CAF50; /* Hijau untuk normal */
+}
+
+#bmiResult.overweight {
+    background-color: #FF9800; /* Oranye untuk overweight */
+}
+
+#bmiResult.obese {
+    background-color: #F44336; /* Merah untuk obesitas */
+}
+
+.download-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.download-btn:hover {
+    opacity: 0.8;
+}
+/* Styling for error state */
+.error {
+    border: 1px solid red;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875em;
+    margin-top: 5px; /* Adjust margin to place message below the input */
+}
+
+/* Styling for the result container */
+.result-container {
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.result-container.normal {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.result-container.overweight {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.result-container.obese {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Hide feature info after BMI calculation */
+#feature-info, #feature-info-2 {
+    display: block;
+    font-size: 14px;
+    color: #7b7b7b;
+}
